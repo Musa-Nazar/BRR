@@ -1,4 +1,3 @@
-
 body {
     overflow-x: hidden;
 }
@@ -83,7 +82,6 @@ header nav ul{
 .our-services-preview-section h1{
     font-size: 3rem;
 }
-
 .our-services-card-container{
     flex-direction: column;
     width: 100%;
@@ -99,7 +97,7 @@ header nav ul{
 }
 .our-services-card .img-sec img{
     display: block;
-    height: 20rem;
+    height: 30rem;
 }
 .our-services-card-info{
     height: 15rem;
