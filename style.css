@@ -251,6 +251,7 @@ header nav ul li a{
 }
 .our-services-card-info{
     width: 52.2342064714946%;
+    height: 100%;
 }
 .our-services-card-info-container{
     display: grid;
