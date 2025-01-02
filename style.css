@@ -297,6 +297,8 @@ header nav ul li a{
 .partners-card-container {
     width: 88%;
     justify-content: space-between;
+    gap: 0;
+    flex-direction: row;
 }
 .partners-card-container img{
     flex: none;
@@ -319,6 +321,7 @@ header nav ul li a{
 .contact-us-preview-container {
     width: 60%;
     justify-content: space-between;
+    flex-direction: row;
 }
 .contact-us-preview-card{
     gap: 2rem;
