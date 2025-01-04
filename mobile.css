@@ -11,14 +11,26 @@ header nav ul{
 /* SHOWCASE SECTION */
 .showcase-text-container{
     width: 90%;
-    height: unset;
-    padding: 1rem 0;
+    height: 90%;
+    padding: 0;
+    background-color: rgba(255,255,255,0.7);
 }
 .showcase-text-container div p,
 .showcase-text-container div p span{
-    width: 65%;
+    width: 75%;
     line-height: 5rem;
+    font-size: 1.8rem;
     height: unset;
+    text-align: center;
+}
+.showcase-text-container div a{
+    height: unset;
+    width: unset;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.4rem;
 }
 .showcase-text-container div p{
     width: 90%;
@@ -53,6 +65,10 @@ header nav ul{
 .about-us-preview-info h2, .about-us-preview-info p{
     width: 90%;
 }
+.about-us-preview-info p{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.8);
+}
 .about-us-preview-head{
     height: 15rem !important;
     align-items: flex-start;
@@ -81,7 +97,7 @@ header nav ul{
 .our-services-preview-section{
     gap: 2rem;
     padding: 2rem 0 0 0;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 .our-services-preview-section h1{
     font-size: 3rem;
@@ -130,8 +146,8 @@ header nav ul{
 .contact-us-preview-section{
     gap: 2rem;
     padding: 2rem 0 2rem 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .contact-us-preview-section > h1{
     font-size: 3rem;
@@ -149,6 +165,10 @@ header nav ul{
     width: 88%;
     height: 30rem;
     overflow: hidden;
+}
+.li-icon{
+    justify-content: center;
+    gap: 1rem;
 }
 /* FOOTER SECTION */
 .footer-content {
