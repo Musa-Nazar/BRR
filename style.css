@@ -197,6 +197,7 @@ header nav ul li a{
     width: 85%;
     height: 85%;
     justify-content: center;
+    align-items: flex-start;
     gap: 2.6rem;
 }
 .about-us-preview-info h2,
@@ -205,7 +206,7 @@ header nav ul li a{
 }
 .about-us-preview-info h2{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
     color: rgb(3, 7, 82);
 }
@@ -216,6 +217,7 @@ header nav ul li a{
     letter-spacing: normal;
     color: rgb(var(--txt-color));
     font-weight: 100;
+    width: 40.514rem;
 }
 .about-us-preview-info p::first-line {
     line-height: 150%;
@@ -323,6 +325,7 @@ header nav ul li a{
     color: #fff;
     text-align: center;
     font-family: "Questrial",sans-serif;
+    font-weight: 700;
 }
 .contact-us-preview-container {
     width: 60%;
