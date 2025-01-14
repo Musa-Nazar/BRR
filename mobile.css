@@ -17,7 +17,7 @@ header nav ul{
 }
 .showcase-text-container div p,
 .showcase-text-container div p span{
-    width: 75%;
+    width: 100%;
     line-height: 5rem;
     font-size: 1.8rem;
     height: unset;
@@ -64,6 +64,7 @@ header nav ul{
 }
 .about-us-preview-info h2, .about-us-preview-info p{
     width: 90%;
+    line-height: 4rem;
 }
 .about-us-preview-info p{
     font-size: 1.6rem;
@@ -87,6 +88,7 @@ header nav ul{
 .about-us-preview-info div{
     gap: 1rem;
     padding: 5rem 0 5rem 0;
+    margin: 0;
     align-items: center;
 }
 .line{
