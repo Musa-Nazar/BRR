@@ -195,10 +195,11 @@ header nav ul li a{
 }
 .about-us-preview-info  div{
     width: 85%;
-    height: 85%;
     justify-content: center;
     align-items: flex-start;
     gap: 2.6rem;
+    margin-top: 3.5rem;
+    padding: 0;
 }
 .about-us-preview-info h2,
 .about-us-preview-info p{
