@@ -1,0 +1,164 @@
+html:has(.toggle:checked) {
+  overflow: hidden;
+}
+.hamburger-2,
+.menu-wrap {
+  width: 2.6rem;
+  height: 2.6rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu:has(> div > div .toggle-2:checked) {
+  visibility: hidden;
+}
+.menu > div:has(> div .toggle-2:checked) {
+  transform: translateX(100%);
+}
+.menu > div > div:has(.toggle-2:checked) {
+  opacity: 0;
+}
+.hamburger-2 {
+  background: var(--card-text);
+  padding: 1rem;
+}
+.hamburger-2 {
+  width: 4.6rem;
+  height: 4.6rem;
+  position: absolute;
+  z-index: 8;
+  transition: 0.9s;
+}
+.toggle,
+.toggle-2,
+.hamburger {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.toggle {
+  cursor: pointer;
+  opacity: 0;
+  z-index: 10;
+}
+.toggle:checked ~ .menu { visibility: visible; }
+.toggle:checked ~ .menu > div { transform: translateX(0); }
+.toggle:checked ~ .menu > div > div .hamburger-2 { 
+  --left: calc((100% * -1));
+  transform: translateX(var(--left));
+}
+.toggle:checked ~ .menu > div > div { 
+  opacity: 1;
+  transform: translateX(0) skew(0);
+}
+.hamburger-2 > div,
+.hamburger > div {
+  width: 100%;
+  height: 0.4rem;
+  background-color: var(--primary-color);
+  position: relative;
+}
+.hamburger-2 > div::before,
+.hamburger-2 > div::after,
+.hamburger > div::before,
+.hamburger > div::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.4rem;
+  top: -0.6rem;
+  background-color: inherit;
+}
+.hamburger-2 > div::before {
+  transform: rotate(90deg);
+}
+.hamburger-2 > div {
+  transform: rotate(-45deg);
+}
+.hamburger-2 > div::after,
+.hamburger > div::after {
+  top: 0.55rem;
+}
+.hamburger-2 > div::before,
+.hamburger-2 > div::after {
+  top: 0;
+}
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--card-text);
+  z-index: 5;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.menu > div {
+  position: absolute;
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+  width: 40rem;
+  background: url('https://xtratheme.com/elementor/construction-3/wp-content/uploads/sites/122/2022/10/bg4.jpg') 50% 50%/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.menu > div > div {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease 0.3s;
+  position: relative;
+  transform: translateX(50%) skew(25deg);
+}
+.menu > div > div > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu > div > div > ul > li > a {
+  color: var(--bg-white);
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom: rgba(167, 167, 167, .2) 1px solid;
+}
+.toggle-2{
+  opacity: 0;
+  width: 4.6rem;
+  height: 4.6rem;
+  transform: translateX(-100%);
+  z-index: 9;
+  cursor: pointer;
+}
+.toggle-2:checked,
+.toggle-2:checked + .hamburger-2 {
+  transform: translateX(0) !important;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu-wrap {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+  .hamburger,
+  .hamburger-2 {
+    padding: 1rem;
+  }
+  .hamburger-2 {
+    transition: none;
+  }
+  .menu > div {
+    width: 75%;
+  }
+}

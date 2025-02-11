@@ -1,0 +1,134 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+/* utils */
+.bg-container {
+  width: 100%;
+  height: 100vh;
+}
+.bg-dark { 
+  background-color: black;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .flex-center > *,
+.flex-center-column > *,
+.flex > *,
+.flex-column > * {
+  flex: none;
+} */
+input:focus {
+  outline: none;
+}
+/* Remove icons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fill {
+  width: 100% !important;
+}
+.fill-half {
+  width: 100%;
+  height: 45%;
+}
+.fill-all {
+  width: 100%;
+  height: 100vh;
+}
+/* shapes */
+.circle {
+  border-radius: 50%;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.no-border {
+  border: none !important;
+}
+/* padding */
+.py-t-b-10 { 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
+.py-t-20 { padding-top: 20px; }
+/* margin */
+.mg-bt-5 { margin-bottom: 5px; }
+/* Remove defaults */
+.a {
+  text-decoration: none;
+}
+.ul{
+  list-style: none;  
+}
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+/* positions */
+.p-abs{ position: absolute; }
+.p-rel{ position: relative; }
+.p-fix{ position: fixed; }
+/* default */
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+.t-center {
+  text-align: center;
+}
+.t-right { text-align: right; }
+.t-left { text-align: left; }
+@media (max-width : 768px) {
+  .m-d-none {
+    display: none;
+  }
+  .m-d-block {
+    display: block;
+  }
+  .m-d-flex {
+    display: flex;
+  }
+}
