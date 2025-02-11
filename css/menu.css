@@ -81,7 +81,7 @@ html:has(.toggle:checked) {
 }
 .hamburger-2 > div::after,
 .hamburger > div::after {
-  top: 0.55rem;
+  top: 0.6rem;
 }
 .hamburger-2 > div::before,
 .hamburger-2 > div::after {
