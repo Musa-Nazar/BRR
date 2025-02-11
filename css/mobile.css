@@ -1,6 +1,7 @@
 header {
   background: #fff;
   height: 8rem;
+  position: relative;
 }
 .nav::before,
 .nav::after {
