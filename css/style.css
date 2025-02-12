@@ -582,3 +582,13 @@ iframe + a {
 .card-btn { font-size: 1.5rem; }
 iframe ~ img { display: none; }
 a i { margin-left: 0.8rem; }
+@media (max-width: 1024px) {
+  .showcase-text .wrapper {
+    padding: 1rem;
+  }
+}
+@media (max-width: 920px) {
+  .showcase-section {
+    margin-top: 0;
+  }
+}
