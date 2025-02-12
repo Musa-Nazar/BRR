@@ -1,6 +1,6 @@
 header {
   background: #fff;
-  height: 8rem;
+  height: 7rem;
   position: relative;
 }
 .nav::before,
@@ -26,6 +26,9 @@ header {
 }
 .showcase-content > div {
   width: 100%;
+}
+.showcase-content h1 {
+  font-size: 4rem;
 }
 .showcase-text .wrapper {
   padding: 2rem;
