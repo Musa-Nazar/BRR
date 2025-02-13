@@ -1,4 +1,4 @@
-header {
+ header {
   background: #fff;
   height: 7rem;
   position: relative;
@@ -26,9 +26,6 @@ header {
 }
 .showcase-content > div {
   width: 100%;
-}
-.showcase-content h1 {
-  font-size: 4rem;
 }
 .showcase-text .wrapper {
   padding: 2rem;
@@ -82,6 +79,9 @@ header {
 .services-preview-card:first-child,
 .services-preview-card {
   padding: 3rem;
+}
+.services-preview-card:not(:last-child) {
+  border-bottom: 1px solid var(--dark-border-color)
 }
 .services-preview-card ul li {
   text-align: center;
